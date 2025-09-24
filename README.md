@@ -1,1 +1,17 @@
 # Rice_NOTS_cluster
+
+Username: lh106
+Full Name: Lauren Hennelly
+E-mail: Lauren.Hennelly@rice.edu
+
+
+
+
+
+KU cluster 
+ssh crq857@mjolnirgate.unicph.domain
+
+cisco
+KUVPN
+crq857  
+Rangerbuster1!
