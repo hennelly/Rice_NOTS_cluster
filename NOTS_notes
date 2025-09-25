@@ -14,8 +14,42 @@ Storage to store behind jobs. Copy data from /storage/hpc/work, run job, and sav
 Sponser Fee: $50 per month
 User fee: $10 per month
 
+CRC Office Hours - in-person office hours every Tuesday from 10am-2pm in Mudd 101A/ 
+
+Partition Names
+commons - general shared computing pool. 24 hour wall time
+long - 3 day wall time for jobs that need to run longer - new scheduling option
+debug - short jobs, debugging, interaction with the command is needed
+scavenge - take advantage of idle condo resources. 1 hour wall time. 
+
+Managing data on NOTS
+- they purge scratch, inactive for more than two weeks, they will be deleted. 
+- Move data off of scratch to other systems. 
+- Home directory /home. Quota of 10Gb per user. 
+- Group Project directory: 100GB per group /projects (place python, shared software, shared python environments, conda bioconda, )
+- Work storage space: /storage/hpc/work -> 2 TB per group
+- RHF - /rhf/allocations/ - quota varies 
+- shared fast scratch - /scratch - size is 300 TB, no quota. Purges in 14 days
+- local scratch per node - /tmp -> 4 TB, no quota, purged at the end of each job. 
 
 
-Scratch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
