@@ -53,6 +53,9 @@ This will tell you where the version is found.
 
 use module spider python/3.11.5 will tell you which other modules you will need to load. 
 
+module list -> what modules are currently loaded at the time. 
+module purge -> exits out of all modules
+
 
 
 
