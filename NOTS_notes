@@ -51,7 +51,7 @@ which matlab
 /opt/apps/software/MATLAB/2023b/bin/matlab
 This will tell you where the version is found. 
 
-
+use module spider python/3.11.5 will tell you which other modules you will need to load. 
 
 
 
