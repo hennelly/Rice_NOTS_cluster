@@ -33,6 +33,26 @@ Managing data on NOTS
 - local scratch per node - /tmp -> 4 TB, no quota, purged at the end of each job. 
 
 
+rhf -> store large active datasets, compute nodes can also get to the compute nodes. /work/ nodes can not be accessed by the compute node. 
+They suggest to pull out data from /work/ and put into scratch. 
+
+External compute servers, can export same rfh allocation to work group servers. Saves a step to copy the datasets into NOTS. 
+
+NOTS uses LMOD to manage software environmental variables. Many packages and software like R. 
+
+If want to run matlab on the cluster, we can search for module spider command. 
+
+module spider matlab -> gives all information on matlab and versions and the location 
+
+ module spider matlab/2023a -> tell you more an dtell you how to load it in the enviornment. 
+
+Can do module load MATLAB/2023b
+which matlab
+/opt/apps/software/MATLAB/2023b/bin/matlab
+This will tell you where the version is found. 
+
+
+
 
 
 
