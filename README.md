@@ -4,6 +4,7 @@ Username: lh106
 Full Name: Lauren Hennelly
 E-mail: Lauren.Hennelly@rice.edu
 
+ssh -Y lh106@nots.rice.edu
 
 
 
