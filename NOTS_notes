@@ -64,6 +64,22 @@ module purge -> exits out of all modules
 
 
 
+scratch -> gets deleted after weeks. 
+home -> don't put data 
+- don't install python packages. dot files, scripts, 
+projects -> code and libraries, put the python, code, conda, 100G , shared space for code
+/storage/hpc/work/lh106 -> shared group area, 
+
+RAPID firesystems
+/work -> 2TB quota persistent network storage
+
+
+RHF - large scale storage 
+10TB or more large dataset
+First ten is 10Tb is subsidized 
+Push scratch output to the RHF, can access it directly from server system in lab. 
+link to apply for share in presentation
+/rhf/allocations/lh106
 
 
 
