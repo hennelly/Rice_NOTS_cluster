@@ -10,6 +10,13 @@ ssh -Y lh106@nots.rice.edu
 /projects/psg/people/crq857/TSHR_Oct2024/03_TSHR_Phylogeny/chr8_Canis_modern_v9_TSHRgene_phased_haplotype_final.vcf.recode.vcf
 
 Remove
+Asianwolves_revision  Chapter2              Chapter3              Geneflow_Dogs         GuamRail              Museumwolves          PRLRgene              Redwolf               TSHR_revision         TSHRpaper             
+reproductivegenes
+
+sftp LwKsBCw7QM@io.erda.dk
+password: LwKsBCw7QM@io.erda.dk
+
+
 
 
 KU cluster 
