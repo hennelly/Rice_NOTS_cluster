@@ -11,6 +11,8 @@ Storage to store behind jobs. Copy data from /storage/hpc/work, run job, and sav
 /home -> may home
 /scratch -> high reading and writing input output the jobs. 
 
+/project/lh106
+
 Sponser Fee: $50 per month
 User fee: $10 per month
 
