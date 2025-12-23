@@ -18,6 +18,9 @@ password: LwKsBCw7QM@io.erda.dk
 
 
 
+/home/crq857/projects/Chapter2/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_fixed.bed
+
+
 
 KU cluster 
 
@@ -235,4 +238,46 @@ grep -v "chr" ${DIR}/chr8_Canis_modern_v9_TSHRgene_phased_haplotype_final_remove
 
 
 
+
+
+
+
+
+#!/usr/bin/env bash
+#SBATCH --job-name=lowrec
+#SBATCH -c 1
+#SBATCH --time 01:30:00
+#SBATCH --mem-per-cpu 1G
+#SBATCH -o /home/crq857/projects/Chapter2/slurmout/lowrecombinationred.auto.out
+#SBATCH -e /home/crq857/projects/Chapter2/slurmout/lowrecombinationred.auto.err
+
+#Autosomes
+SITES=/home/crq857/projects/Chapter2/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_fixed.bed
+VCFA=/projects/mjolnir1/people/crq857/Redwolf/Aug_VCF/working-20240223_mpileup_auto_fltA3-minDP2_rename3.vcf.gz
+OUTVCFA=/projects/mjolnir1/people/crq857/Redwolf/Aug_VCF/working-20240223_mpileup_auto_fltA3-minDP2_rename3_recombination
+
+module load perl
+module load vcftools
+
+vcftools --gzvcf ${VCFA} --bed ${SITES} --out ${OUTVCFA} --recode --keep-INFO-all
+
+
+
+#!/usr/bin/env bash
+#SBATCH --job-name=lowrecauto
+#SBATCH -c 1
+#SBATCH --time 1-11:30:00
+#SBATCH --mem-per-cpu 5G
+#SBATCH -o /home/crq857/projects/Dingo/slurmout/lowrecombinationred.out
+#SBATCH -e /home/crq857/projects/Dingo/slurmout/lowrecombinationred.err
+
+VCF=/projects/psg/data/Shyam_sharing/refpanel_1715g/1715g_WildSled.SNP.INDEL.chrAll.vcf.gz
+SITES=/home/crq857/projects/Chapter2/files/FINISHED_WHOLEGENOMEbelow0.2_FINAL_copy_fixed.bed
+OUTVCF=/projects/psg/people/crq857/Exploring/1715g_WildSled.SNP.INDEL.chrAll_autosomes_lowrecombination
+
+module load perl
+module load vcftools
+
+#Xchr
+vcftools --gzvcf ${VCF} --bed ${SITES} --out ${OUTVCF} --recode --keep-INFO-all
 
