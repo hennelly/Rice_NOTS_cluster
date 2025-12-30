@@ -10,3 +10,5 @@ Scripts for moving files over to backblaze
 
 rclone sync /home/crq857/projects/Redwolf HennellyLabBackup:HennellyLabBackup/Projects_CPH/Redwolf
 
+Username: laurenmaehennelly@gmail.com
+Password: RiceUniversity1
