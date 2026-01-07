@@ -1,3 +1,15 @@
+#NOTS open Rice 
+
+./storage/hpc/work/lh106/bin/ncftp-3.3.0/bin/ncftp
+./ncftp
+
+open -u subftp -p CrasHeshyevVafivgud2 ftp-private.ncbi.nlm.nih.gov
+cd uploads/laurenhennelly_gmail.com_9ptOctH7
+
+mkdir SUB123456_related_data
+cd SUB123456_related_data
+put file_name
+
 
 
 /scratch/lh106/rawfiles
